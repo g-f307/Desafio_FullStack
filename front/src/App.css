@@ -1,0 +1,40 @@
+.task-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .task-card {
+    transition: transform 0.2s;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .status-badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.75em;
+  }
+  
+  .form-select {
+    cursor: pointer;
+    width: auto !important;
+  }
+  
+  .alert-fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  @media (max-width: 768px) {
+    .task-card .btn-group {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .task-card select {
+      width: 100% !important;
+    }
+  }
